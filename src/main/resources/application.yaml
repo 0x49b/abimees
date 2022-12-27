@@ -1,7 +1,17 @@
+abimees:
+  jwt:
+    issuer-name: ${JWT_ISSUER:abimees}
+    secret: ${JWT_SECRET:Z1ON0101}
+
 server:
   port: 8090
 
 spring:
+  security:
+    filter:
+      order: 10
+    user:
+      password: Test12345_
   flyway:
     clean-on-validation-error: false
     locations:
