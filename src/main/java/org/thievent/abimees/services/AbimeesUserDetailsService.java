@@ -29,5 +29,5 @@ public class AbimeesUserDetailsService implements UserDetailsService {
                 email,
                 user.getPassword(),
                 Collections.singletonList(new SimpleGrantedAuthority("ROLE_USER")));
-    }
+    }   
 }

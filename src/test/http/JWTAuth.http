@@ -1,3 +1,8 @@
+GET http://localhost:8090/api/user/info
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJhYmltZWVzLmp3dC5pc3N1ZXItbmFtZSIsImlhdCI6MTY3MjE3NDk3MywiZW1haWwiOiJ1c2VyLm9uZUBnbWFpbC5jb20ifQ.aEAY8lwae5rfOYvCkl8rWfM7ysFE6Cbqi00HfG0cLB0
+
+###
 POST http://localhost:8090/api/auth/register
 Content-Type: application/json
 
