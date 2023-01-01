@@ -1,10 +1,7 @@
 package org.thievent.abimees.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 import org.springframework.lang.Nullable;
 import org.thievent.abimees.models.ShirtSize;
 
@@ -23,6 +20,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @ToString.Exclude
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 
