@@ -36,7 +36,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .cors()
                 .and()
                 .authorizeHttpRequests()
-                .antMatchers("/h2-console/**", "/", "/api/auth/**").permitAll()
+                .antMatchers("/h2-console/**", "/", "/api/auth/**", "/api/clients/**").permitAll()
                 .antMatchers("/api/user/**").hasRole("USER")
                 .and()
                 .userDetailsService(uds)

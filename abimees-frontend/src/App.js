@@ -13,6 +13,10 @@ function App() {
     history.navigate = useNavigate();
     history.location = useLocation();
 
+    const state = {
+        clients: []
+    }
+
     return (
         <div className="app-container bg-light">
             <Nav/>

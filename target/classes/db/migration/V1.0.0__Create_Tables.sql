@@ -12,3 +12,10 @@ CREATE TABLE abimees_user
     plannedDepartureDate DATE
         UNIQUE(email)
 );
+
+CREATE TABLE client
+(
+    id    int SERIAL PRIMARY KEY NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    name  VARCHAR(256),
+)
