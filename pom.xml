@@ -180,6 +180,15 @@
 						</goals>
 						<phase>generate-resources</phase>
 					</execution>
+
+<execution>
+						<id>yarn eject</id>
+						<goals>
+							<goal>yarn</goal>
+						</goals>
+						<phase>generate-resources</phase>
+					</execution>
+
 					<!--<execution>
 						<id>yarn test</id>
 						<goals>
