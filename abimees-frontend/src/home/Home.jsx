@@ -2,6 +2,7 @@ import {useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 
 import {userActions} from '_store';
+import {Spinner} from "reactstrap";
 
 export {Home};
 
@@ -28,7 +29,7 @@ function Home() {
                     )}
                 </ul>
             }
-            {users.loading && <div className="spinner-border spinner-border-sm"></div>}
+            {users.loading && <Spinner color="dark" size="sm">Loading...</Spinner>}
             {users.error && <div className="text-danger">Error loading users: {users.error.message}</div>}
         </div>
     );
