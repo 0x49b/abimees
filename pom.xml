@@ -173,13 +173,6 @@
 							<yarnVersion>${yarn.version}</yarnVersion>
 						</configuration>
 					</execution>
-					<execution>
-						<id>yarn install</id>
-						<goals>
-							<goal>yarn</goal>
-						</goals>
-						<phase>generate-resources</phase>
-					</execution>
 
 <execution>
 						<id>yarn eject</id>
@@ -189,9 +182,18 @@
 						<phase>generate-resources</phase>
 					</execution>
 
+					<execution>
+						<id>yarn install</id>
+						<goals>
+							<goal>yarn</goal>
+						</goals>
+						<phase>generate-resources</phase>
+					</execution>
+
+
 					<!--<execution>
 						<id>yarn test</id>
-						<goals>
+				 		<goals>
 							<goal>yarn</goal>
 						</goals>
 						<phase>test</phase>
